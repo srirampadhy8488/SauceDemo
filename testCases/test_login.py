@@ -25,7 +25,7 @@ class Test_001_Login:
         self.lp.setpassword(self.password)
         self.lp.clicklogin()
         self.logger.info("Logging In")
-        self.targetpage=self.pp.getpagetitle()
+        self.targetpage=self.pp.isProductPageExists()
         if self.targetpage == True:
             self.logger.info("Login Successfull")
             assert True

@@ -1999,3 +1999,557 @@
 03/07/2026 07:51:51 PM: DEBUG: Finished Request
 03/07/2026 07:51:51 PM: INFO: DDT Test Passed
 03/07/2026 07:51:51 PM: INFO: ******* End of test_003_login_Datadriven **********
+03/14/2026 12:12:41 PM: DEBUG: Selenium Manager binary found at: D:\PythonProject\SauceDemo\.venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+03/14/2026 12:12:41 PM: DEBUG: Executing process: D:\PythonProject\SauceDemo\.venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+03/14/2026 12:12:44 PM: DEBUG: Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "windows", arch: "x86_64", lang: "python", selenium_version: "4.41" }
+03/14/2026 12:12:44 PM: DEBUG: chromedriver not found in PATH
+03/14/2026 12:12:44 PM: DEBUG: chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+03/14/2026 12:12:44 PM: DEBUG: Detected browser: chrome 145.0.7632.162
+03/14/2026 12:12:44 PM: DEBUG: Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+03/14/2026 12:12:44 PM: DEBUG: Required driver: chromedriver 145.0.7632.117
+03/14/2026 12:12:44 PM: DEBUG: chromedriver 145.0.7632.117 already in the cache
+03/14/2026 12:12:44 PM: DEBUG: Driver path: C:\Users\admin\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+03/14/2026 12:12:44 PM: DEBUG: Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+03/14/2026 12:12:44 PM: DEBUG: Started executable: `C:\Users\admin\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe` in a child process with pid: 17344 using 0 to output -3
+03/14/2026 12:12:44 PM: DEBUG: POST http://localhost:57567/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'prefs': {'credentials_enable_service': False, 'profile.password_manager_enabled': False}, 'excludeSwitches': ['enable-automation'], 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--disable-notifications', '--incognito']}}}}
+03/14/2026 12:12:44 PM: DEBUG: Starting new HTTP connection (1): localhost:57567
+03/14/2026 12:12:45 PM: DEBUG: http://localhost:57567 "POST /session HTTP/1.1" 200 0
+03/14/2026 12:12:45 PM: DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"145.0.7632.162","chrome":{"chromedriverVersion":"145.0.7632.117 (de4e5d6e13b995f5e04137970c0e8ec456017467-refs/branch-heads/7632@{#3101})","userDataDir":"C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir17344_1962444786"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:57572"},"goog:processID":6340,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"7e2a7edcadace3d051af501234c2cc61"}} | headers=HTTPHeaderDict({'Content-Length': '906', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:45 PM: DEBUG: Finished Request
+03/14/2026 12:12:45 PM: INFO: *** Test_001_Login Started ***
+03/14/2026 12:12:45 PM: DEBUG: POST http://localhost:57567/session/7e2a7edcadace3d051af501234c2cc61/url {'url': 'https://www.saucedemo.com/'}
+03/14/2026 12:12:46 PM: DEBUG: http://localhost:57567 "POST /session/7e2a7edcadace3d051af501234c2cc61/url HTTP/1.1" 200 0
+03/14/2026 12:12:46 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:46 PM: DEBUG: Finished Request
+03/14/2026 12:12:46 PM: INFO: Launching URL
+03/14/2026 12:12:46 PM: DEBUG: POST http://localhost:57567/session/7e2a7edcadace3d051af501234c2cc61/window/maximize {}
+03/14/2026 12:12:53 PM: DEBUG: http://localhost:57567 "POST /session/7e2a7edcadace3d051af501234c2cc61/window/maximize HTTP/1.1" 200 0
+03/14/2026 12:12:53 PM: DEBUG: Remote response: status=200 | data={"value":{"height":832,"width":1552,"x":-7,"y":-7}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:53 PM: DEBUG: Finished Request
+03/14/2026 12:12:53 PM: INFO: Logging in with valid credentials
+03/14/2026 12:12:53 PM: DEBUG: POST http://localhost:57567/session/7e2a7edcadace3d051af501234c2cc61/element {'using': 'css selector', 'value': '[id="user-name"]'}
+03/14/2026 12:12:53 PM: DEBUG: http://localhost:57567 "POST /session/7e2a7edcadace3d051af501234c2cc61/element HTTP/1.1" 200 0
+03/14/2026 12:12:53 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.2"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:53 PM: DEBUG: Finished Request
+03/14/2026 12:12:53 PM: DEBUG: POST http://localhost:57567/session/7e2a7edcadace3d051af501234c2cc61/element/f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.2/clear {}
+03/14/2026 12:12:53 PM: DEBUG: http://localhost:57567 "POST /session/7e2a7edcadace3d051af501234c2cc61/element/f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.2/clear HTTP/1.1" 200 0
+03/14/2026 12:12:53 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:53 PM: DEBUG: Finished Request
+03/14/2026 12:12:53 PM: DEBUG: POST http://localhost:57567/session/7e2a7edcadace3d051af501234c2cc61/element/f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.2/value {'text': 'standard_user', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r']}
+03/14/2026 12:12:53 PM: DEBUG: http://localhost:57567 "POST /session/7e2a7edcadace3d051af501234c2cc61/element/f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.2/value HTTP/1.1" 200 0
+03/14/2026 12:12:53 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:53 PM: DEBUG: Finished Request
+03/14/2026 12:12:53 PM: DEBUG: POST http://localhost:57567/session/7e2a7edcadace3d051af501234c2cc61/element {'using': 'css selector', 'value': '[id="password"]'}
+03/14/2026 12:12:53 PM: DEBUG: http://localhost:57567 "POST /session/7e2a7edcadace3d051af501234c2cc61/element HTTP/1.1" 200 0
+03/14/2026 12:12:53 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.3"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:53 PM: DEBUG: Finished Request
+03/14/2026 12:12:53 PM: DEBUG: POST http://localhost:57567/session/7e2a7edcadace3d051af501234c2cc61/element/f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.3/clear {}
+03/14/2026 12:12:53 PM: DEBUG: http://localhost:57567 "POST /session/7e2a7edcadace3d051af501234c2cc61/element/f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.3/clear HTTP/1.1" 200 0
+03/14/2026 12:12:53 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:53 PM: DEBUG: Finished Request
+03/14/2026 12:12:53 PM: DEBUG: POST http://localhost:57567/session/7e2a7edcadace3d051af501234c2cc61/element/f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.3/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}
+03/14/2026 12:12:53 PM: DEBUG: http://localhost:57567 "POST /session/7e2a7edcadace3d051af501234c2cc61/element/f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.3/value HTTP/1.1" 200 0
+03/14/2026 12:12:53 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:53 PM: DEBUG: Finished Request
+03/14/2026 12:12:53 PM: DEBUG: POST http://localhost:57567/session/7e2a7edcadace3d051af501234c2cc61/element {'using': 'css selector', 'value': '[id="login-button"]'}
+03/14/2026 12:12:53 PM: DEBUG: http://localhost:57567 "POST /session/7e2a7edcadace3d051af501234c2cc61/element HTTP/1.1" 200 0
+03/14/2026 12:12:53 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:53 PM: DEBUG: Finished Request
+03/14/2026 12:12:53 PM: DEBUG: POST http://localhost:57567/session/7e2a7edcadace3d051af501234c2cc61/element/f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.4/click {}
+03/14/2026 12:12:53 PM: DEBUG: http://localhost:57567 "POST /session/7e2a7edcadace3d051af501234c2cc61/element/f.B72F1F70C237959540A2DF5D5460B251.d.14D6323D39A747517462F00A64C5FFC0.e.4/click HTTP/1.1" 200 0
+03/14/2026 12:12:53 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:53 PM: DEBUG: Finished Request
+03/14/2026 12:12:53 PM: INFO: Logging In
+03/14/2026 12:12:54 PM: DEBUG: Selenium Manager binary found at: D:\PythonProject\SauceDemo\.venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+03/14/2026 12:12:54 PM: DEBUG: Executing process: D:\PythonProject\SauceDemo\.venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+03/14/2026 12:12:54 PM: DEBUG: chromedriver not found in PATH
+03/14/2026 12:12:54 PM: DEBUG: chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+03/14/2026 12:12:54 PM: DEBUG: Detected browser: chrome 145.0.7632.162
+03/14/2026 12:12:54 PM: DEBUG: Required driver: chromedriver 145.0.7632.117
+03/14/2026 12:12:54 PM: DEBUG: chromedriver 145.0.7632.117 already in the cache
+03/14/2026 12:12:54 PM: DEBUG: Driver path: C:\Users\admin\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+03/14/2026 12:12:54 PM: DEBUG: Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+03/14/2026 12:12:54 PM: DEBUG: Started executable: `C:\Users\admin\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe` in a child process with pid: 23236 using 0 to output -3
+03/14/2026 12:12:54 PM: DEBUG: POST http://localhost:49909/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'prefs': {'credentials_enable_service': False, 'profile.password_manager_enabled': False}, 'excludeSwitches': ['enable-automation'], 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--disable-notifications', '--incognito']}}}}
+03/14/2026 12:12:54 PM: DEBUG: Starting new HTTP connection (1): localhost:49909
+03/14/2026 12:12:55 PM: DEBUG: http://localhost:49909 "POST /session HTTP/1.1" 200 0
+03/14/2026 12:12:55 PM: DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"145.0.7632.162","chrome":{"chromedriverVersion":"145.0.7632.117 (de4e5d6e13b995f5e04137970c0e8ec456017467-refs/branch-heads/7632@{#3101})","userDataDir":"C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir23236_157228587"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:49912"},"goog:processID":8036,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"463906775f1718b210cd34d0ce3b19cf"}} | headers=HTTPHeaderDict({'Content-Length': '905', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:55 PM: DEBUG: Finished Request
+03/14/2026 12:12:55 PM: INFO: *** Starting Test_003_Login_DataDriven ***
+03/14/2026 12:12:55 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/url {'url': 'https://www.saucedemo.com/'}
+03/14/2026 12:12:57 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/url HTTP/1.1" 200 0
+03/14/2026 12:12:57 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:57 PM: DEBUG: Finished Request
+03/14/2026 12:12:57 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/window/maximize {}
+03/14/2026 12:12:57 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/window/maximize HTTP/1.1" 200 0
+03/14/2026 12:12:57 PM: DEBUG: Remote response: status=200 | data={"value":{"height":832,"width":1552,"x":-7,"y":-7}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:57 PM: DEBUG: Finished Request
+03/14/2026 12:12:57 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="user-name"]'}
+03/14/2026 12:12:57 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:12:57 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.2"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:57 PM: DEBUG: Finished Request
+03/14/2026 12:12:57 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.2/clear {}
+03/14/2026 12:12:57 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.2/clear HTTP/1.1" 200 0
+03/14/2026 12:12:57 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:57 PM: DEBUG: Finished Request
+03/14/2026 12:12:57 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.2/value {'text': 'standard_user', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r']}
+03/14/2026 12:12:57 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.2/value HTTP/1.1" 200 0
+03/14/2026 12:12:57 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:57 PM: DEBUG: Finished Request
+03/14/2026 12:12:57 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="password"]'}
+03/14/2026 12:12:57 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:12:57 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.3"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:57 PM: DEBUG: Finished Request
+03/14/2026 12:12:57 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.3/clear {}
+03/14/2026 12:12:57 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.3/clear HTTP/1.1" 200 0
+03/14/2026 12:12:57 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:57 PM: DEBUG: Finished Request
+03/14/2026 12:12:57 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.3/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}
+03/14/2026 12:12:57 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.3/value HTTP/1.1" 200 0
+03/14/2026 12:12:57 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:57 PM: DEBUG: Finished Request
+03/14/2026 12:12:57 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="login-button"]'}
+03/14/2026 12:12:57 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:12:57 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:57 PM: DEBUG: Finished Request
+03/14/2026 12:12:57 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.4/click {}
+03/14/2026 12:12:57 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.4/click HTTP/1.1" 200 0
+03/14/2026 12:12:57 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:12:57 PM: DEBUG: Finished Request
+03/14/2026 12:13:00 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'xpath', 'value': "//span[@class='title']"}
+03/14/2026 12:13:00 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:00 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.26"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:00 PM: DEBUG: Finished Request
+03/14/2026 12:13:00 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){/*\n\n Copyright The Closure Library Authors.\n ...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.26'}]}
+03/14/2026 12:13:00 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/execute/sync HTTP/1.1" 200 0
+03/14/2026 12:13:00 PM: DEBUG: Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:00 PM: DEBUG: Finished Request
+03/14/2026 12:13:00 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'xpath', 'value': "//*[@id='react-burger-menu-btn']"}
+03/14/2026 12:13:00 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:00 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.27"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:00 PM: DEBUG: Finished Request
+03/14/2026 12:13:00 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.27/click {}
+03/14/2026 12:13:00 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.27/click HTTP/1.1" 200 0
+03/14/2026 12:13:00 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:00 PM: DEBUG: Finished Request
+03/14/2026 12:13:00 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="logout_sidebar_link"]'}
+03/14/2026 12:13:00 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:00 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.28"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:00 PM: DEBUG: Finished Request
+03/14/2026 12:13:00 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){/*\n\n Copyright The Closure Library Authors.\n ...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.28'}]}
+03/14/2026 12:13:00 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/execute/sync HTTP/1.1" 200 0
+03/14/2026 12:13:00 PM: DEBUG: Remote response: status=200 | data={"value":false} | headers=HTTPHeaderDict({'Content-Length': '15', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:00 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="logout_sidebar_link"]'}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.28"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){/*\n\n Copyright The Closure Library Authors.\n ...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.28'}]}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/execute/sync HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: GET http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.28/enabled {}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "GET /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.28/enabled HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.28/click {}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.28/click HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="user-name"]'}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/clear {}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/clear HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/value {'text': 'standard_user1', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r', '1']}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/value HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="password"]'}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/clear {}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/clear HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/value HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="login-button"]'}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.33"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:01 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.33/click {}
+03/14/2026 12:13:01 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.33/click HTTP/1.1" 200 0
+03/14/2026 12:13:01 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:01 PM: DEBUG: Finished Request
+03/14/2026 12:13:04 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'xpath', 'value': "//span[@class='title']"}
+03/14/2026 12:13:04 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 404 0
+03/14/2026 12:13:04 PM: DEBUG: Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@class='title']\"}\n  (Session info: chrome=145.0.7632.162)","stacktrace":"Symbols not available. Dumping unresolved backtrace:\n\t0x7ff6e6faaa55\n\t0x7ff6e6d08630\n\t0x7ff6e6a9d75d\n\t0x7ff6e6af862e\n\t0x7ff6e6af893c\n\t0x7ff6e6b48d87\n\t0x7ff6e6b4591c\n\t0x7ff6e6ae9098\n\t0x7ff6e6ae9f83\n\t0x7ff6e6fd7810\n\t0x7ff6e6fd1afd\n\t0x7ff6e6ff2c1a\n\t0x7ff6e6d23345\n\t0x7ff6e6d2b81c\n\t0x7ff6e6d11924\n\t0x7ff6e6d11ad6\n\t0x7ff6e6cf7e47\n\t0x7ffc270fe8d7\n\t0x7ffc27f6c40c\n"}} | headers=HTTPHeaderDict({'Content-Length': '608', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:04 PM: DEBUG: Finished Request
+03/14/2026 12:13:04 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="user-name"]'}
+03/14/2026 12:13:04 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:04 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:04 PM: DEBUG: Finished Request
+03/14/2026 12:13:04 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/clear {}
+03/14/2026 12:13:04 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/clear HTTP/1.1" 200 0
+03/14/2026 12:13:04 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:04 PM: DEBUG: Finished Request
+03/14/2026 12:13:04 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/value {'text': 'standard_user', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r']}
+03/14/2026 12:13:04 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/value HTTP/1.1" 200 0
+03/14/2026 12:13:04 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:04 PM: DEBUG: Finished Request
+03/14/2026 12:13:04 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="password"]'}
+03/14/2026 12:13:04 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:04 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:04 PM: DEBUG: Finished Request
+03/14/2026 12:13:04 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/clear {}
+03/14/2026 12:13:04 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/clear HTTP/1.1" 200 0
+03/14/2026 12:13:04 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:04 PM: DEBUG: Finished Request
+03/14/2026 12:13:04 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/value {'text': 'secretsauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', 's', 'a', 'u', 'c', 'e']}
+03/14/2026 12:13:04 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/value HTTP/1.1" 200 0
+03/14/2026 12:13:04 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:04 PM: DEBUG: Finished Request
+03/14/2026 12:13:04 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="login-button"]'}
+03/14/2026 12:13:04 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:04 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.33"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:04 PM: DEBUG: Finished Request
+03/14/2026 12:13:04 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.33/click {}
+03/14/2026 12:13:05 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.33/click HTTP/1.1" 200 0
+03/14/2026 12:13:05 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:05 PM: DEBUG: Finished Request
+03/14/2026 12:13:08 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'xpath', 'value': "//span[@class='title']"}
+03/14/2026 12:13:08 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 404 0
+03/14/2026 12:13:08 PM: DEBUG: Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@class='title']\"}\n  (Session info: chrome=145.0.7632.162)","stacktrace":"Symbols not available. Dumping unresolved backtrace:\n\t0x7ff6e6faaa55\n\t0x7ff6e6d08630\n\t0x7ff6e6a9d75d\n\t0x7ff6e6af862e\n\t0x7ff6e6af893c\n\t0x7ff6e6b48d87\n\t0x7ff6e6b4591c\n\t0x7ff6e6ae9098\n\t0x7ff6e6ae9f83\n\t0x7ff6e6fd7810\n\t0x7ff6e6fd1afd\n\t0x7ff6e6ff2c1a\n\t0x7ff6e6d23345\n\t0x7ff6e6d2b81c\n\t0x7ff6e6d11924\n\t0x7ff6e6d11ad6\n\t0x7ff6e6cf7e47\n\t0x7ffc270fe8d7\n\t0x7ffc27f6c40c\n"}} | headers=HTTPHeaderDict({'Content-Length': '608', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:08 PM: DEBUG: Finished Request
+03/14/2026 12:13:08 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="user-name"]'}
+03/14/2026 12:13:08 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:08 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:08 PM: DEBUG: Finished Request
+03/14/2026 12:13:08 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/clear {}
+03/14/2026 12:13:08 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/clear HTTP/1.1" 200 0
+03/14/2026 12:13:08 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:08 PM: DEBUG: Finished Request
+03/14/2026 12:13:08 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/value {'text': 'standard_user1', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r', '1']}
+03/14/2026 12:13:08 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.29/value HTTP/1.1" 200 0
+03/14/2026 12:13:08 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:08 PM: DEBUG: Finished Request
+03/14/2026 12:13:08 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="password"]'}
+03/14/2026 12:13:08 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:08 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:08 PM: DEBUG: Finished Request
+03/14/2026 12:13:08 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/clear {}
+03/14/2026 12:13:08 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/clear HTTP/1.1" 200 0
+03/14/2026 12:13:08 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:08 PM: DEBUG: Finished Request
+03/14/2026 12:13:08 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/value {'text': 'secretsauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', 's', 'a', 'u', 'c', 'e']}
+03/14/2026 12:13:08 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.32/value HTTP/1.1" 200 0
+03/14/2026 12:13:08 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:08 PM: DEBUG: Finished Request
+03/14/2026 12:13:08 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'css selector', 'value': '[id="login-button"]'}
+03/14/2026 12:13:08 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 200 0
+03/14/2026 12:13:08 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.33"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:08 PM: DEBUG: Finished Request
+03/14/2026 12:13:08 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.33/click {}
+03/14/2026 12:13:08 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element/f.0F995F3B13DCB05FB03E9A0121DF0650.d.8BA002E7B78ED2425A9DA1C37F110BA1.e.33/click HTTP/1.1" 200 0
+03/14/2026 12:13:08 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:08 PM: DEBUG: Finished Request
+03/14/2026 12:13:11 PM: DEBUG: POST http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/element {'using': 'xpath', 'value': "//span[@class='title']"}
+03/14/2026 12:13:11 PM: DEBUG: http://localhost:49909 "POST /session/463906775f1718b210cd34d0ce3b19cf/element HTTP/1.1" 404 0
+03/14/2026 12:13:11 PM: DEBUG: Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@class='title']\"}\n  (Session info: chrome=145.0.7632.162)","stacktrace":"Symbols not available. Dumping unresolved backtrace:\n\t0x7ff6e6faaa55\n\t0x7ff6e6d08630\n\t0x7ff6e6a9d75d\n\t0x7ff6e6af862e\n\t0x7ff6e6af893c\n\t0x7ff6e6b48d87\n\t0x7ff6e6b4591c\n\t0x7ff6e6ae9098\n\t0x7ff6e6ae9f83\n\t0x7ff6e6fd7810\n\t0x7ff6e6fd1afd\n\t0x7ff6e6ff2c1a\n\t0x7ff6e6d23345\n\t0x7ff6e6d2b81c\n\t0x7ff6e6d11924\n\t0x7ff6e6d11ad6\n\t0x7ff6e6cf7e47\n\t0x7ffc270fe8d7\n\t0x7ffc27f6c40c\n"}} | headers=HTTPHeaderDict({'Content-Length': '608', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:11 PM: DEBUG: Finished Request
+03/14/2026 12:13:11 PM: DEBUG: DELETE http://localhost:49909/session/463906775f1718b210cd34d0ce3b19cf/window {}
+03/14/2026 12:13:11 PM: DEBUG: http://localhost:49909 "DELETE /session/463906775f1718b210cd34d0ce3b19cf/window HTTP/1.1" 200 0
+03/14/2026 12:13:11 PM: DEBUG: Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:13:11 PM: DEBUG: Finished Request
+03/14/2026 12:13:11 PM: INFO: DDT Test Passed
+03/14/2026 12:13:11 PM: INFO: ******* End of test_003_login_Datadriven **********
+03/14/2026 12:14:57 PM: DEBUG: Selenium Manager binary found at: D:\PythonProject\SauceDemo\.venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+03/14/2026 12:14:57 PM: DEBUG: Executing process: D:\PythonProject\SauceDemo\.venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+03/14/2026 12:14:57 PM: DEBUG: chromedriver not found in PATH
+03/14/2026 12:14:57 PM: DEBUG: chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+03/14/2026 12:14:57 PM: DEBUG: Detected browser: chrome 145.0.7632.162
+03/14/2026 12:14:57 PM: DEBUG: Required driver: chromedriver 145.0.7632.117
+03/14/2026 12:14:57 PM: DEBUG: chromedriver 145.0.7632.117 already in the cache
+03/14/2026 12:14:57 PM: DEBUG: Driver path: C:\Users\admin\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+03/14/2026 12:14:57 PM: DEBUG: Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+03/14/2026 12:14:57 PM: DEBUG: Started executable: `C:\Users\admin\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe` in a child process with pid: 13820 using 0 to output -3
+03/14/2026 12:14:57 PM: DEBUG: POST http://localhost:53721/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'prefs': {'credentials_enable_service': False, 'profile.password_manager_enabled': False}, 'excludeSwitches': ['enable-automation'], 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--disable-notifications', '--incognito']}}}}
+03/14/2026 12:14:57 PM: DEBUG: Starting new HTTP connection (1): localhost:53721
+03/14/2026 12:14:58 PM: DEBUG: http://localhost:53721 "POST /session HTTP/1.1" 200 0
+03/14/2026 12:14:58 PM: DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"145.0.7632.162","chrome":{"chromedriverVersion":"145.0.7632.117 (de4e5d6e13b995f5e04137970c0e8ec456017467-refs/branch-heads/7632@{#3101})","userDataDir":"C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir13820_569764877"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:53724"},"goog:processID":21716,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"c23c04956ad4aeac178852394c2a230e"}} | headers=HTTPHeaderDict({'Content-Length': '906', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:14:58 PM: DEBUG: Finished Request
+03/14/2026 12:14:58 PM: INFO: *** Test_001_Login Started ***
+03/14/2026 12:14:58 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/url {'url': 'https://www.saucedemo.com/'}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/url HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: INFO: Launching URL
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/window/maximize {}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/window/maximize HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":{"height":832,"width":1552,"x":-7,"y":-7}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: INFO: Logging in with valid credentials
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/element {'using': 'css selector', 'value': '[id="user-name"]'}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/element HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.3"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/element/f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.3/clear {}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/element/f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.3/clear HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/element/f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.3/value {'text': 'standard_user', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r']}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/element/f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.3/value HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/element {'using': 'css selector', 'value': '[id="password"]'}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/element HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/element/f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.4/clear {}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/element/f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.4/clear HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/element/f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.4/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/element/f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.4/value HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/element {'using': 'css selector', 'value': '[id="login-button"]'}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/element HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.5"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/element/f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.5/click {}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/element/f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.5/click HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: INFO: Logging In
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/element {'using': 'xpath', 'value': "//span[@class='title']"}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/element HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.21"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: DEBUG: POST http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){/*\n\n Copyright The Closure Library Authors.\n ...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.97D603E86D1156B47F9DA7BD74153FCB.d.039B3D19EC64EB77F0F8A1838D297A5E.e.21'}]}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "POST /session/c23c04956ad4aeac178852394c2a230e/execute/sync HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: INFO: Login Successfull
+03/14/2026 12:15:06 PM: DEBUG: DELETE http://localhost:53721/session/c23c04956ad4aeac178852394c2a230e/window {}
+03/14/2026 12:15:06 PM: DEBUG: http://localhost:53721 "DELETE /session/c23c04956ad4aeac178852394c2a230e/window HTTP/1.1" 200 0
+03/14/2026 12:15:06 PM: DEBUG: Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:06 PM: DEBUG: Finished Request
+03/14/2026 12:15:06 PM: INFO: *** Test_001_Login Finished ***
+03/14/2026 12:15:06 PM: DEBUG: Selenium Manager binary found at: D:\PythonProject\SauceDemo\.venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+03/14/2026 12:15:06 PM: DEBUG: Executing process: D:\PythonProject\SauceDemo\.venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+03/14/2026 12:15:06 PM: DEBUG: chromedriver not found in PATH
+03/14/2026 12:15:06 PM: DEBUG: chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+03/14/2026 12:15:06 PM: DEBUG: Detected browser: chrome 145.0.7632.162
+03/14/2026 12:15:06 PM: DEBUG: Required driver: chromedriver 145.0.7632.117
+03/14/2026 12:15:06 PM: DEBUG: chromedriver 145.0.7632.117 already in the cache
+03/14/2026 12:15:06 PM: DEBUG: Driver path: C:\Users\admin\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+03/14/2026 12:15:06 PM: DEBUG: Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+03/14/2026 12:15:06 PM: DEBUG: Started executable: `C:\Users\admin\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe` in a child process with pid: 10936 using 0 to output -3
+03/14/2026 12:15:07 PM: DEBUG: POST http://localhost:53056/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'prefs': {'credentials_enable_service': False, 'profile.password_manager_enabled': False}, 'excludeSwitches': ['enable-automation'], 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': ['--disable-notifications', '--incognito']}}}}
+03/14/2026 12:15:07 PM: DEBUG: Starting new HTTP connection (1): localhost:53056
+03/14/2026 12:15:07 PM: DEBUG: http://localhost:53056 "POST /session HTTP/1.1" 200 0
+03/14/2026 12:15:07 PM: DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"145.0.7632.162","chrome":{"chromedriverVersion":"145.0.7632.117 (de4e5d6e13b995f5e04137970c0e8ec456017467-refs/branch-heads/7632@{#3101})","userDataDir":"C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir10936_96667988"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:53059"},"goog:processID":1056,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"33c8d38fc40317babd497a2eb343d504"}} | headers=HTTPHeaderDict({'Content-Length': '904', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:07 PM: DEBUG: Finished Request
+03/14/2026 12:15:07 PM: INFO: *** Starting Test_003_Login_DataDriven ***
+03/14/2026 12:15:07 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/url {'url': 'https://www.saucedemo.com/'}
+03/14/2026 12:15:09 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/url HTTP/1.1" 200 0
+03/14/2026 12:15:09 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:09 PM: DEBUG: Finished Request
+03/14/2026 12:15:09 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/window/maximize {}
+03/14/2026 12:15:09 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/window/maximize HTTP/1.1" 200 0
+03/14/2026 12:15:09 PM: DEBUG: Remote response: status=200 | data={"value":{"height":832,"width":1552,"x":-7,"y":-7}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:09 PM: DEBUG: Finished Request
+03/14/2026 12:15:09 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="user-name"]'}
+03/14/2026 12:15:09 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:09 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.2"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:09 PM: DEBUG: Finished Request
+03/14/2026 12:15:09 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.2/clear {}
+03/14/2026 12:15:09 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.2/clear HTTP/1.1" 200 0
+03/14/2026 12:15:09 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:09 PM: DEBUG: Finished Request
+03/14/2026 12:15:09 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.2/value {'text': 'standard_user', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r']}
+03/14/2026 12:15:09 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.2/value HTTP/1.1" 200 0
+03/14/2026 12:15:09 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:09 PM: DEBUG: Finished Request
+03/14/2026 12:15:09 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="password"]'}
+03/14/2026 12:15:09 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:09 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.3"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:09 PM: DEBUG: Finished Request
+03/14/2026 12:15:09 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.3/clear {}
+03/14/2026 12:15:09 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.3/clear HTTP/1.1" 200 0
+03/14/2026 12:15:09 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:09 PM: DEBUG: Finished Request
+03/14/2026 12:15:09 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.3/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}
+03/14/2026 12:15:09 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.3/value HTTP/1.1" 200 0
+03/14/2026 12:15:09 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:09 PM: DEBUG: Finished Request
+03/14/2026 12:15:09 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="login-button"]'}
+03/14/2026 12:15:09 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:09 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:09 PM: DEBUG: Finished Request
+03/14/2026 12:15:09 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.4/click {}
+03/14/2026 12:15:09 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.4/click HTTP/1.1" 200 0
+03/14/2026 12:15:09 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:09 PM: DEBUG: Finished Request
+03/14/2026 12:15:12 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'xpath', 'value': "//span[@class='title']"}
+03/14/2026 12:15:12 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:12 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.26"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:12 PM: DEBUG: Finished Request
+03/14/2026 12:15:12 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){/*\n\n Copyright The Closure Library Authors.\n ...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.26'}]}
+03/14/2026 12:15:12 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/execute/sync HTTP/1.1" 200 0
+03/14/2026 12:15:12 PM: DEBUG: Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:12 PM: DEBUG: Finished Request
+03/14/2026 12:15:12 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'xpath', 'value': "//*[@id='react-burger-menu-btn']"}
+03/14/2026 12:15:12 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:12 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.27"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:12 PM: DEBUG: Finished Request
+03/14/2026 12:15:12 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.27/click {}
+03/14/2026 12:15:12 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.27/click HTTP/1.1" 200 0
+03/14/2026 12:15:12 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:12 PM: DEBUG: Finished Request
+03/14/2026 12:15:12 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="logout_sidebar_link"]'}
+03/14/2026 12:15:12 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:12 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.28"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:12 PM: DEBUG: Finished Request
+03/14/2026 12:15:12 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){/*\n\n Copyright The Closure Library Authors.\n ...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.28'}]}
+03/14/2026 12:15:12 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/execute/sync HTTP/1.1" 200 0
+03/14/2026 12:15:12 PM: DEBUG: Remote response: status=200 | data={"value":false} | headers=HTTPHeaderDict({'Content-Length': '15', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:12 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="logout_sidebar_link"]'}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.28"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){/*\n\n Copyright The Closure Library Authors.\n ...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.28'}]}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/execute/sync HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: GET http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.28/enabled {}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "GET /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.28/enabled HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.28/click {}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.28/click HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="user-name"]'}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/clear {}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/clear HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/value {'text': 'standard_user1', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r', '1']}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/value HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="password"]'}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/clear {}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/clear HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/value {'text': 'secret_sauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', '_', 's', 'a', 'u', 'c', 'e']}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/value HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="login-button"]'}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.33"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:13 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.33/click {}
+03/14/2026 12:15:13 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.33/click HTTP/1.1" 200 0
+03/14/2026 12:15:13 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:13 PM: DEBUG: Finished Request
+03/14/2026 12:15:16 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'xpath', 'value': "//span[@class='title']"}
+03/14/2026 12:15:16 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 404 0
+03/14/2026 12:15:16 PM: DEBUG: Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@class='title']\"}\n  (Session info: chrome=145.0.7632.162)","stacktrace":"Symbols not available. Dumping unresolved backtrace:\n\t0x7ff6e6faaa55\n\t0x7ff6e6d08630\n\t0x7ff6e6a9d75d\n\t0x7ff6e6af862e\n\t0x7ff6e6af893c\n\t0x7ff6e6b48d87\n\t0x7ff6e6b4591c\n\t0x7ff6e6ae9098\n\t0x7ff6e6ae9f83\n\t0x7ff6e6fd7810\n\t0x7ff6e6fd1afd\n\t0x7ff6e6ff2c1a\n\t0x7ff6e6d23345\n\t0x7ff6e6d2b81c\n\t0x7ff6e6d11924\n\t0x7ff6e6d11ad6\n\t0x7ff6e6cf7e47\n\t0x7ffc270fe8d7\n\t0x7ffc27f6c40c\n"}} | headers=HTTPHeaderDict({'Content-Length': '608', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:16 PM: DEBUG: Finished Request
+03/14/2026 12:15:16 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="user-name"]'}
+03/14/2026 12:15:16 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:16 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:16 PM: DEBUG: Finished Request
+03/14/2026 12:15:16 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/clear {}
+03/14/2026 12:15:16 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/clear HTTP/1.1" 200 0
+03/14/2026 12:15:16 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:16 PM: DEBUG: Finished Request
+03/14/2026 12:15:16 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/value {'text': 'standard_user', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r']}
+03/14/2026 12:15:16 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/value HTTP/1.1" 200 0
+03/14/2026 12:15:16 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:16 PM: DEBUG: Finished Request
+03/14/2026 12:15:16 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="password"]'}
+03/14/2026 12:15:16 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:16 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:16 PM: DEBUG: Finished Request
+03/14/2026 12:15:16 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/clear {}
+03/14/2026 12:15:16 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/clear HTTP/1.1" 200 0
+03/14/2026 12:15:16 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:16 PM: DEBUG: Finished Request
+03/14/2026 12:15:16 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/value {'text': 'secretsauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', 's', 'a', 'u', 'c', 'e']}
+03/14/2026 12:15:16 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/value HTTP/1.1" 200 0
+03/14/2026 12:15:16 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:16 PM: DEBUG: Finished Request
+03/14/2026 12:15:16 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="login-button"]'}
+03/14/2026 12:15:16 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:16 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.33"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:16 PM: DEBUG: Finished Request
+03/14/2026 12:15:16 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.33/click {}
+03/14/2026 12:15:16 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.33/click HTTP/1.1" 200 0
+03/14/2026 12:15:16 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:16 PM: DEBUG: Finished Request
+03/14/2026 12:15:19 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'xpath', 'value': "//span[@class='title']"}
+03/14/2026 12:15:19 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 404 0
+03/14/2026 12:15:19 PM: DEBUG: Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@class='title']\"}\n  (Session info: chrome=145.0.7632.162)","stacktrace":"Symbols not available. Dumping unresolved backtrace:\n\t0x7ff6e6faaa55\n\t0x7ff6e6d08630\n\t0x7ff6e6a9d75d\n\t0x7ff6e6af862e\n\t0x7ff6e6af893c\n\t0x7ff6e6b48d87\n\t0x7ff6e6b4591c\n\t0x7ff6e6ae9098\n\t0x7ff6e6ae9f83\n\t0x7ff6e6fd7810\n\t0x7ff6e6fd1afd\n\t0x7ff6e6ff2c1a\n\t0x7ff6e6d23345\n\t0x7ff6e6d2b81c\n\t0x7ff6e6d11924\n\t0x7ff6e6d11ad6\n\t0x7ff6e6cf7e47\n\t0x7ffc270fe8d7\n\t0x7ffc27f6c40c\n"}} | headers=HTTPHeaderDict({'Content-Length': '608', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:19 PM: DEBUG: Finished Request
+03/14/2026 12:15:19 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="user-name"]'}
+03/14/2026 12:15:19 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:19 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:19 PM: DEBUG: Finished Request
+03/14/2026 12:15:19 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/clear {}
+03/14/2026 12:15:19 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/clear HTTP/1.1" 200 0
+03/14/2026 12:15:19 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:19 PM: DEBUG: Finished Request
+03/14/2026 12:15:19 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/value {'text': 'standard_user1', 'value': ['s', 't', 'a', 'n', 'd', 'a', 'r', 'd', '_', 'u', 's', 'e', 'r', '1']}
+03/14/2026 12:15:19 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.29/value HTTP/1.1" 200 0
+03/14/2026 12:15:19 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:19 PM: DEBUG: Finished Request
+03/14/2026 12:15:19 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="password"]'}
+03/14/2026 12:15:20 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:20 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:20 PM: DEBUG: Finished Request
+03/14/2026 12:15:20 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/clear {}
+03/14/2026 12:15:20 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/clear HTTP/1.1" 200 0
+03/14/2026 12:15:20 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:20 PM: DEBUG: Finished Request
+03/14/2026 12:15:20 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/value {'text': 'secretsauce', 'value': ['s', 'e', 'c', 'r', 'e', 't', 's', 'a', 'u', 'c', 'e']}
+03/14/2026 12:15:20 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.32/value HTTP/1.1" 200 0
+03/14/2026 12:15:20 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:20 PM: DEBUG: Finished Request
+03/14/2026 12:15:20 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'css selector', 'value': '[id="login-button"]'}
+03/14/2026 12:15:20 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 200 0
+03/14/2026 12:15:20 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.33"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:20 PM: DEBUG: Finished Request
+03/14/2026 12:15:20 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.33/click {}
+03/14/2026 12:15:20 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element/f.03D0755C44F3926A66EC145B5472022A.d.12DDF37FFDBE778B90F959196FD40048.e.33/click HTTP/1.1" 200 0
+03/14/2026 12:15:20 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:20 PM: DEBUG: Finished Request
+03/14/2026 12:15:23 PM: DEBUG: POST http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/element {'using': 'xpath', 'value': "//span[@class='title']"}
+03/14/2026 12:15:23 PM: DEBUG: http://localhost:53056 "POST /session/33c8d38fc40317babd497a2eb343d504/element HTTP/1.1" 404 0
+03/14/2026 12:15:23 PM: DEBUG: Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@class='title']\"}\n  (Session info: chrome=145.0.7632.162)","stacktrace":"Symbols not available. Dumping unresolved backtrace:\n\t0x7ff6e6faaa55\n\t0x7ff6e6d08630\n\t0x7ff6e6a9d75d\n\t0x7ff6e6af862e\n\t0x7ff6e6af893c\n\t0x7ff6e6b48d87\n\t0x7ff6e6b4591c\n\t0x7ff6e6ae9098\n\t0x7ff6e6ae9f83\n\t0x7ff6e6fd7810\n\t0x7ff6e6fd1afd\n\t0x7ff6e6ff2c1a\n\t0x7ff6e6d23345\n\t0x7ff6e6d2b81c\n\t0x7ff6e6d11924\n\t0x7ff6e6d11ad6\n\t0x7ff6e6cf7e47\n\t0x7ffc270fe8d7\n\t0x7ffc27f6c40c\n"}} | headers=HTTPHeaderDict({'Content-Length': '608', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:23 PM: DEBUG: Finished Request
+03/14/2026 12:15:23 PM: DEBUG: DELETE http://localhost:53056/session/33c8d38fc40317babd497a2eb343d504/window {}
+03/14/2026 12:15:23 PM: DEBUG: http://localhost:53056 "DELETE /session/33c8d38fc40317babd497a2eb343d504/window HTTP/1.1" 200 0
+03/14/2026 12:15:23 PM: DEBUG: Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/14/2026 12:15:23 PM: DEBUG: Finished Request
+03/14/2026 12:15:23 PM: INFO: DDT Test Passed
+03/14/2026 12:15:23 PM: INFO: ******* End of test_003_login_Datadriven **********
